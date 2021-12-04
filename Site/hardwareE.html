@@ -1,0 +1,56 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>SafeBike</title>
+		<meta charset="UTF-8">
+		<link rel ="icon" type= "image/x-icon" href="favicon.ico">
+		<link rel ="stylesheet" type= "text/css" href="design-safebike.css">
+	</head>
+	<body>
+	<body TEXT= "#449dc9">
+		<div class="menu-bar">
+    <ul>  
+	 <li class="passive"><a href="indexE.html">Home</a></li>
+	 <li class="active"><a href="#">Work</a>
+	    <div class = "sub-menu-1">
+		 <ul>
+		    <li><a href="hardwareE.html">Hardware</a></li>
+			<li><a href="softwareE.html">Software</a></li>
+		 </ul>
+		</div>
+	 </li>
+	  <li class="passive"><a href="picturesE.html">Photos</a></li>
+	<li class="passive"><a href="contactsE.html">Contacts</a></li>
+	</ul>
+	<a href="hardwareE.html">
+	<img class="imga" src="https://www.iconninja.com/files/195/272/902/english-icon.png"
+	style="width: 2% " >  
+      </a>
+      <a href="hardware.html">
+	<img class="imga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Nuvola_Bulgarian_flag.svg/1024px-Nuvola_Bulgarian_flag.svg.png"
+	style="width: 2% " >  
+      </a>
+</div>
+<div id="wrapper" class="text">
+<h1>Hardware</h1>
+<p>
+	The SafeBike project contains hardware managed by software written on ArduinoIDE. The hardware is made from an arduino microcontroller and sensors connected with it. The Arduino board sends and receives signals (analog or digital) to the sensors. Depending on the returned information, outputs are controlled (lcd display, LED, etc.). I use ArduinoNANO to control the sensors, as it is small in size but contains the necessary inputs and outputs. The power supply is 5V and can be connected directly to the sensors.
+</p>
+<p>
+	<img class="imgl" src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b2267b506d4e4594666ef83a79896a9a/h/t/httpsstatics3.seeedstudio.comimagesproductarduino20nano.jpg" 
+	 style="width: 45%" >
+	<img class="imgr" src="https://i.pinimg.com/564x/62/d4/95/62d4959b7c850ca9b47bc671961cf8ed.jpg" 
+	 style="width: 45%" >
+
+</p>
+<p>
+	I made a real model in order to visualize the project. <br>
+- To detect distance, I use ultrasonic sensor HC-SR04. It sends ultrasonic waves and detects a distance relative to the time of their return. <br>
+- To display information while cycling, I use an lcd display.<br>
+- To detect the slope of the road, I use a sensor (gyroscope) GY-521.<br>
+- To read the turning angle, I use a potentiometer. <br>
+- To read the rpm of the wheel, I use an infrared diffusion sensor. The light is emitted by the sensor, part of the light reflected by the object is returned to the sensor and a pulse is detected. <br>
+</p>
+	</div>
+	</body>
+	</html>

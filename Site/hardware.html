@@ -1,0 +1,56 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>SafeBike</title>
+		<meta charset="UTF-8">
+		<link rel ="icon" type= "image/x-icon" href="favicon.ico">
+		<link rel ="stylesheet" type= "text/css" href="design-safebike.css">
+	</head>
+	<body>
+	<body TEXT= "#449dc9">
+		<div class="menu-bar">
+    <ul>  
+	 <li class="passive"><a href="index.html">Начало</a></li>
+	 <li class="active"><a href="#">Изработка</a>
+	    <div class = "sub-menu-1">
+		 <ul>
+		    <li><a href="hardware.html">Хардуер</a></li>
+			<li><a href="software.html">Софтуер</a></li>
+		 </ul>
+		</div>
+	 </li>
+	  <li class="passive"><a href="pictures.html">Снимки</a></li>
+	<li class="passive"><a href="contacts.html">Контакти</a></li>
+	</ul>
+	<a href="hardwareE.html">
+	<img class="imga" src="https://www.iconninja.com/files/195/272/902/english-icon.png"
+	style="width: 2% " >  
+      </a>
+      <a href="hardware.html">
+	<img class="imga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Nuvola_Bulgarian_flag.svg/1024px-Nuvola_Bulgarian_flag.svg.png"
+	style="width: 2% " >  
+      </a>
+</div>
+<div id="wrapper" class="text">
+<h1>Хардуер</h1>
+<p>
+	Проектът SafeBike съдържа хардуер управляван от написан на ArduinoIDE софтуер. Хардуерът е съставен микроконтролер на Arduino и сензори свързани с него. Arduino платката изпраща и получава сигнали (постояннотокови или цифрови) до сензорите. В зависимост от върнатата информация се управляват изходи (lcd дисплей, светодиод и др.). За контролиране на сензорите използвам  ArduinoNANO, тъй като има малък размер, но съдържа нужните входове и изходи. Захранването е с напрежение  5V и може директно да се свързва със сензорите.
+</p>
+<p>
+	<img class="imgl" src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b2267b506d4e4594666ef83a79896a9a/h/t/httpsstatics3.seeedstudio.comimagesproductarduino20nano.jpg" 
+	 style="width: 45%" >
+	<img class="imgr" src="https://i.pinimg.com/564x/62/d4/95/62d4959b7c850ca9b47bc671961cf8ed.jpg" 
+	 style="width: 45%" >
+
+</p>
+<p>
+	Направих реален макет с цел визуализация на проекта.<br>
+-	За засичане на дистанция, използвам ultrasonic сензор HC-SR04. Той изпраща ултразвукови вълни и спрямо времето на връщането им засича разстояние. <br>
+-	За показване на информация по време на колоездене, използвам lcd дисплей.<br>
+-	За засичане на ъгъла на пътя, използвам сензор (жироскоп) GY-521.<br>
+-	За отчитане на ъгъла на завиване, използвам потенциометър.<br>
+-	За отчитане на оборотите за минута на колелото, използвам инфрачервен дифузен сензор. Светлината се излъчва от сензора,  част от отразената от обекта светлина се връща обратно в сензора и се засича един импулс. <br>
+</p>
+	</div>
+	</body>
+	</html>
